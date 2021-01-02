@@ -29,6 +29,6 @@ hm = pyHook.HookManager()
 hm.KeyDown = OnKeyboardEvent 
 # set the hook 
 hm.HookKeyboard() 
-# wait loop 
+# start wait loop 
 pythoncom.PumpMessages() 
 
