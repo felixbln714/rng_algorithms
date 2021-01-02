@@ -1,6 +1,6 @@
-# Payloads - Felix Hellmich
+# Payloads - *Felix Hellmich*
 A repository containing various payloads I wrote or found useful.
-Containing:\n\t
+Containing:
 	- A simple Linux Keylogger
 	- A simple Windows Keylogger
 	- A FUD-Reverse-SH-Python Generator
