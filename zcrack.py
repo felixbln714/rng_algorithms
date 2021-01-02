@@ -1,6 +1,5 @@
 #!/usr/bin/python2
 
-# import
 import zipfile, argparse
 
 # set optional arguments
@@ -24,7 +23,3 @@ for password in passwords:
     except:
         # no match found, print no print no match found
         print("[I] No Match Found!")
-
-
-
-
