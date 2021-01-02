@@ -22,8 +22,8 @@ for password in passwords:
             print("[*] Password Match Found! %s" % passwd)
             break
     except:
-        # no match found
-        print("[~] No Match Found!")
+        # no match found, print no print no match found
+        print("[I] No Match Found!")
 
 
 
