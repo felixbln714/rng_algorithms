@@ -1,5 +1,4 @@
-# Payloads
-*Felix Hellmich* 
+# Payloads - Felix Hellmich
 A repository containing various payloads I wrote or found useful.
 Containing:
 	- A simple Linux Keylogger
