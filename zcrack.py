@@ -1,4 +1,5 @@
 #!/usr/bin/python2
+# Written by Felix Hellmich
 
 import zipfile, argparse
 
