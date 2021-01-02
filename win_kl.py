@@ -1,3 +1,5 @@
+# Written by Felix Hellmich
+
 import win32api 
 import win32console 
 import win32gui 
