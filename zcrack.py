@@ -19,8 +19,8 @@ for password in passwords:
         # set args.target as target and if match found print match
         with zipfile.ZipFile(args.target) as target:
             target.extractall(pwd=passwd)
-            print("[*] Password Match Found! %s" % passwd)
+            print("[+] Password Match Found! %s" % passwd)
             break
     except:
         # no match found, print no print no match found
-        print("[I] No Match Found!")
+        print("[-] No Match Found!")
