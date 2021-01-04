@@ -1,8 +1,9 @@
-#!/bin/zsh
+#!/bin/bash
 # Written by Felix Hellmich
 
 # show usage if needed
-[[ $1 == '' || $1 == '-h' || $1 == '--help' || $1 == '-u' || $1 == '--usage']] && (echo "usage: <HOST> <PORT> </path/to/file(default is /tmp/payload.py)>"; break)
+if [[ $1 == '' || $1 == '-h' || $1 == '--help' || $1 == '-u' || $1 == '--usage' ]]; then
+	echo "usage: <HOST> <PORT> </path/to/file(default=/tmp/payload.py)>"; exit; fi
 # create output file and set file name 
 if [[ $3 == '' ]]; then file="/tmp/payload.py"; else file="$3"; fi; touch $file
 # write payload
