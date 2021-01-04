@@ -1,8 +1,4 @@
-# Payloads - *Felix Hellmich*
-A repository containing various payloads I wrote or found useful.
-Containing:
-	- A simple Linux Keylogger
-	- A simple Windows Keylogger
-	- A FUD-Reverse-SH-Python Generator
-	- A simple Zip-Archive Cracker (_bruteforce_)
-
+# Pentesting
+A repository containing various scripts, exploits and payloads I wrote or found useful.
+# Disclaimer
+These scripts are released purely for educational purposes, or for use on penetration testing engagement where appropriate authorisation has been obtained. Any usage outside of this is entirely at the user's own risk.
