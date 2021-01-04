@@ -9,7 +9,7 @@ log_file = os.environ.get('pylogger_file', os.path.expanduser('/tmp/Temp-707e7c0
 # allows setting cancel key from environment args, Default: `
 cancel_key = ord(os.environ.get('pylogger_cancel','`')[0])
 
-# allow clearing log file on start (if pylogger_clean is defined)
+# allow clearing log file on start (if pylogger_clean defined)
 if os.environ.get('pylogger_clean', None) is not None:
     try:
         os.remove(log_file)
