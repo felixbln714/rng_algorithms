@@ -24,4 +24,4 @@ echo "s.close()" >> $file
 # print status
 [[ -f $file ]] && echo "Successfully created reverse shell payload in $file ..." &&
 	chmod +x $file # give rights
-[[ ! -f $file ]] && echo "script:err: An error occured during the process of creating $file ..." && break
+[[ ! -f $file ]] && echo "script:err: An error occured during the process of creating $file ..." && exit
