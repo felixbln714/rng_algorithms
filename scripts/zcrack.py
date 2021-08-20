@@ -30,12 +30,9 @@ def t_ZIP():
             print("[-] No Match Found!")
 
 # define function that refs ZIP
-def handle():
-        # try passwd with type: ZIP
-        if args.type == 'zip'.lower():
-            t_ZIP()
-        # else: error
-        else: print("zcrack: type: '%s': not supported or misstyped" % args.type)
-
-# execute handler
-handle()
+if __name__ == "__main__":
+    # try passwd with type: ZIP
+    if args.type == 'zip'.lower():
+        t_ZIP()
+    # else: error
+    else: print("zcrack: type: '%s': not supported or misstyped" % args.type)
