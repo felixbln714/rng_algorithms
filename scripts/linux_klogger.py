@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Written by Felix Hellmich
 
 import os
 import pyxhook
