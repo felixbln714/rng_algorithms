@@ -1,5 +1,4 @@
 #!/bin/python3.9
-# Written by Felix Hellmich
 
 from cryptography.fernet import Fernet
 import argparse
