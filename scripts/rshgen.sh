@@ -1,5 +1,4 @@
 #!/bin/bash
-# Written by Felix Hellmich
 
 # show usage if needed
 if [[ $1 == '' || $1 == '-h' || $1 == '--help' || $1 == '-u' || $1 == '--usage' ]]; then
