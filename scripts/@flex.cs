@@ -16,7 +16,7 @@ namespace neww
             int w_rights = 0, m_rights = 1;
             for (int i=w_rights;i<m_rights;i++){Console.Write("women :) have " + i.ToString() + " rights");}
             if (x = false) { women_rights = false; men_rights = true;}
-            if (x = true) { women_rights = false; men_rights = true;}
+            else if (x = true) { women_rights = false; men_rights = true;}
             else {women_rights = false; men_rights = true;}
             
         }
